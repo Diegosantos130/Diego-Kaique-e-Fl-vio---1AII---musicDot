@@ -1,11 +1,15 @@
 .cabecalho {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+
     text-align: center;
     font-size: 0.6rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.23em;
     color: #fff;
-    background-color: #2D5377;
 }
 
 .cabecalho__logo {
@@ -31,7 +35,8 @@
 
 @media (min-width: 640px) {
     .cabecalho {
-        padding: 0 5%;
+        padding-top: 0;
+        padding-bottom: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -56,9 +61,3 @@
     }
 }
 
-@media (min-width: 1066px) {
-    .cabecalho {
-        padding-left: calc((100% - 960px) / 2);
-        padding-right: calc((100% - 960px) / 2);
-    }
-}
